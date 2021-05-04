@@ -31,7 +31,7 @@ export const CastItem = ( { actor }: Props ) => {
                 }
             </View>
 
-            <View style={{ padding: 10, height: 80 }}>
+            <View style={{ padding: 10, height: 70, marginBottom: 5 }}>
                 <Text style={{ fontSize: 14, fontWeight: 'bold'}}>
                     { actor.name }
                 </Text>
@@ -49,20 +49,21 @@ const styles = StyleSheet.create({
         flex: 1,
         width: 150,
         backgroundColor: 'white',
+        borderRadius: 10,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 6,
         },
         shadowOpacity: 0.37,
-        shadowRadius: 3,
+        shadowRadius: 5,
 
-        elevation: 9,
+        elevation: 8,
 
-        borderTopLeftRadius: 10,
-        borderTopEndRadius: 10,
-        borderBottomLeftRadius: 10,
-        borderBottomEndRadius: 10,
+        // borderTopLeftRadius: 10,
+        // borderTopEndRadius: 10,
+        // borderBottomLeftRadius: 10,
+        // borderBottomEndRadius: 10,
         marginLeft: 20,
     },
 
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
 
     image: {
         flex: 1,
-        height: 200,
+        height: 160,
         width: 150
     }
 
